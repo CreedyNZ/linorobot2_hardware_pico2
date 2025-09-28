@@ -15,7 +15,7 @@
 #ifndef LINO_BASE_CONFIG_H
 #define LINO_BASE_CONFIG_H
 
-#define LED_PIN 13 //used for debugging status
+#define LED_PIN  //used for debugging status
 
 //uncomment the base you're building
 #define LINO_BASE DIFFERENTIAL_DRIVE       // 2WD and Tracked robot w/ 2 motors
@@ -173,13 +173,13 @@ ROBOT ORIENTATION
 #endif
 
 #ifdef USE_ESC_MOTOR_DRIVER
-  #define MOTOR1_PWM 21 //Pin no 21 is not a PWM pin on Teensy 4.x. You can use pin no 1 instead.
-  #define MOTOR1_IN_A -1 //DON'T TOUCH THIS! This is just a placeholder
-  #define MOTOR1_IN_B -1 //DON'T TOUCH THIS! This is just a placeholder
+  #define MOTOR1_PWM 15 //Pin no 21 is not a PWM pin on Teensy 4.x. You can use pin no 1 instead.
+  #define MOTOR1_IN_A 16 //DON'T TOUCH THIS! This is just a placeholder
+  #define MOTOR1_IN_B 11 //DON'T TOUCH THIS! This is just a placeholder
 
-  #define MOTOR2_PWM 5
-  #define MOTOR2_IN_A -1 //DON'T TOUCH THIS! This is just a placeholder
-  #define MOTOR2_IN_B -1 //DON'T TOUCH THIS! This is just a placeholder
+  #define MOTOR2_PWM 17
+  #define MOTOR2_IN_A 12 //DON'T TOUCH THIS! This is just a placeholder
+  #define MOTOR2_IN_B 11 //DON'T TOUCH THIS! This is just a placeholder
 
   #define MOTOR3_PWM 22
   #define MOTOR3_IN_A -1 //DON'T TOUCH THIS! This is just a placeholder
@@ -188,7 +188,8 @@ ROBOT ORIENTATION
   #define MOTOR4_PWM 4
   #define MOTOR4_IN_A -1 //DON'T TOUCH THIS! This is just a placeholder
   #define MOTOR4_IN_B -1 //DON'T TOUCH THIS! This is just a placeholder
-
+ 
+  #define EN_PIN 10
   #define PWM_MAX 400
   #define PWM_MIN -PWM_MAX
 #endif
