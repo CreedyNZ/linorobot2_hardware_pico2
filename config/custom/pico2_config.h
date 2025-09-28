@@ -188,7 +188,7 @@ ROBOT ORIENTATION
 
   #define PWM_MAX 400
   #define PWM_MIN -PWM_MAX
-  #define ENABLE_PIN         12
+  #define EN_PIN        11
 
 
 #endif
