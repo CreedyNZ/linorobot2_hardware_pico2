@@ -118,8 +118,8 @@ void setup()
     initBattery();
     initRange();
 
-	pinMode(en_pin_, OUTPUT);
-    setLevel(en_pin_, LOW);
+	pinMode(EN_PIN, OUTPUT);
+    setLevel(EN_PIN,LOW);
             
 
     if(Kinematics::LINO_BASE == Kinematics::DIFFERENTIAL_DRIVE)
