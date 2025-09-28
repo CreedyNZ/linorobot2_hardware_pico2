@@ -118,6 +118,10 @@ void setup()
     initBattery();
     initRange();
 
+	pinMode(en_pin_, OUTPUT);
+    setLevel(en_pin_, LOW);
+            
+
     if(Kinematics::LINO_BASE == Kinematics::DIFFERENTIAL_DRIVE)
     {
         total_motors = 2;
