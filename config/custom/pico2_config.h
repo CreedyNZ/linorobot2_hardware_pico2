@@ -172,11 +172,11 @@ ROBOT ORIENTATION
 #ifdef USE_ESC_MOTOR_DRIVER
   #define MOTOR1_PWM 15
   #define MOTOR1_IN_A 16 //DON'T TOUCH THIS! This is just a placeholder
-  #define MOTOR1_IN_B -1 //DON'T TOUCH THIS! This is just a placeholder
+  #define MOTOR1_IN_B 11 //DON'T TOUCH THIS! This is just a placeholder
 
   #define MOTOR2_PWM 17
   #define MOTOR2_IN_A 12//DON'T TOUCH THIS! This is just a placeholder
-  #define MOTOR2_IN_B -1 //DON'T TOUCH THIS! This is just a placeholder
+  #define MOTOR2_IN_B 11 //DON'T TOUCH THIS! This is just a placeholder
 
   #define MOTOR3_PWM 14
   #define MOTOR3_IN_A -1 //DON'T TOUCH THIS! This is just a placeholder
@@ -189,7 +189,7 @@ ROBOT ORIENTATION
   #define PWM_MAX 400
   #define PWM_MIN -PWM_MAX
   #define ENABLE_PIN         12
-  #define BRAKE_PIN          13
+
 
 #endif
 
